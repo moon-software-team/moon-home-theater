@@ -1,7 +1,10 @@
 /** Dependencies */
 import type { AudioChannel, AudioCodec } from './audio';
+import { Language } from './language';
+import { ProviderSource } from './provider';
 import type { VideoCodec, VideoResolution } from './video';
 
+/** Options of the main parsing function */
 export type FilenameParseOptions = {};
 
 /** Parsing result of the filename */
@@ -44,4 +47,14 @@ export type FilenameParseResult = {
    * Is the movie/tv show complete
    */
   isComplete?: boolean;
+  /**
+   * Detected languages in the filename
+   * @example ['french', 'english']
+   */
+  languages?: Language[];
+  /**
+   * Providers list such as tmdb,imdb,tvdb and the associated id
+   * @example [{ source: 'tmdb', id: '555786' }]
+   */
+  providers?: { source: ProviderSource; id: string; }[];
 };
