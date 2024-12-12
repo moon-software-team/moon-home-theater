@@ -1,0 +1,33 @@
+{
+  "extends": "@tsconfig/node-lts-strictest/tsconfig.json",
+  "compilerOptions": {
+    /* Target Options */
+    "target": "ES2019",
+    "module": "CommonJS",
+
+    /* Basic Options */
+    "incremental": true,
+    "declaration": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "noEmit": true,
+    "types": ["node"],
+
+    /* Strict Type-Checking Options */
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* Experimental Options */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false
+  }
+}
