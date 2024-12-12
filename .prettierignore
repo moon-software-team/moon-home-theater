@@ -1,0 +1,11 @@
+# Folders
+node_modules
+dist
+template
+logs
+.turbo
+.coverage
+coverage
+
+# Files
+pnpm-lock.yaml
