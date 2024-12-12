@@ -1,5 +1,4 @@
 {
-  "extends": "@tsconfig/node-lts-strictest/tsconfig.json",
   "compilerOptions": {
     /* Target Options */
     "target": "ES2019",
@@ -29,5 +28,7 @@
     /* Experimental Options */
     "experimentalDecorators": true,
     "emitDecoratorMetadata": false
-  }
+  },
+  "include": ["package"],
+  "exclude": ["**/node_modules", "**/dist", "**/.turbo"]
 }
