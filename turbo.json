@@ -1,0 +1,37 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "clean:build": {
+      "dependsOn": ["build"]
+    },
+    "typecheck": {
+      "cache": false,
+      "dependsOn": ["^typecheck"]
+    },
+    "dev": {
+      "dependsOn": ["build"],
+      "cache": false,
+      "persistent": true
+    },
+    "test": {
+      "dependsOn": ["build"]
+    },
+    "lint": {},
+    "lint:fix": {},
+    "format": {},
+    "format:fix": {}
+  },
+  "globalDependencies": [
+    ".eslintrc.js",
+    ".eslintignore",
+    ".lintstagedrc.js",
+    ".prettierrc",
+    "tsconfig.base.json",
+    "tsconfig.build.json",
+    "tsconfig.json"
+  ]
+}
