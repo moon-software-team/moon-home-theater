@@ -6,7 +6,7 @@
     "{{packageName}}"
   ],
   "author": "Mallory Scotton <mallory.scotton@epitech.eu>",
-  "homepage": "https://github.com/moon-software-team/moon-ui",
+  "homepage": "https://github.com/moon-software-team/moon-home-theater",
   "license": "MIT",
   "main": "src/index.ts",
   "sideEffects": false,
@@ -18,21 +18,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moon-software-team/moon-ui",
+    "url": "git+https://github.com/moon-software-team/moon-home-theater",
     "directory": "packages/{{outDir}}/{{packageName}}"
   },
   "bugs": {
-    "url": "https://github.com/moon-software-team/moon-ui/issues"
+    "url": "https://github.com/moon-software-team/moon-home-theater/issues"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "clean:build": "rimraf ./dist",
-    "dev": "nodemon",
-    "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
-    "lint:fix": "pnpm lint --fix",
-    "format": "prettier --check .",
-    "format:fix": "prettier --write .",
-    "test": "jest",
-    "typecheck": "tsc"
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "pnpm build:fast --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "tsup": {
+    "clean": true,
+    "target": "ES2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
   }
 }
