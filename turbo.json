@@ -5,33 +5,34 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
-    "clean:build": {
-      "dependsOn": ["build"]
+    "build:fast": {
+      "dependsOn": ["^build:fast"],
+      "outputs": ["dist/**"]
     },
     "typecheck": {
-      "cache": false,
-      "dependsOn": ["^typecheck"]
+      "dependsOn": ["^typecheck"],
+      "cache": false
     },
-    "dev": {
-      "dependsOn": ["build"],
-      "cache": false,
-      "persistent": true
+    "start": {
+      "dependsOn": ["^build"],
+      "outputs": []
     },
     "test": {
-      "dependsOn": ["build"]
+      "dependsOn": ["build"],
+      "outputs": []
+    },
+    "clean": {
+      "cache": false,
+      "outputs": []
     },
     "lint": {},
-    "lint:fix": {},
-    "format": {},
-    "format:fix": {}
+    "dev": {
+      "persistent": true,
+      "cache": false
+    },
+    "sb": {
+      "cache": false
+    }
   },
-  "globalDependencies": [
-    ".eslintrc.js",
-    ".eslintignore",
-    ".lintstagedrc.js",
-    ".prettierrc",
-    "tsconfig.base.json",
-    "tsconfig.build.json",
-    "tsconfig.json"
-  ]
+  "globalDependencies": ["tsconfig.json"]
 }
