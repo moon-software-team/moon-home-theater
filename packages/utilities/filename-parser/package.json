@@ -1,9 +1,9 @@
 {
-  "name": "@moon/scanner",
+  "name": "@moon/filename-parser",
   "version": "1.0.0",
-  "description": "Moon Home Theater scanner to get movie and tv show from folders",
+  "description": "Utility package to parse informations such as title and year from torrent type filename",
   "keywords": [
-    "scanner"
+    "filename-parser"
   ],
   "author": "Mallory Scotton <mallory.scotton@epitech.eu>",
   "homepage": "https://github.com/moon-software-team/moon-ui",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/moon-software-team/moon-ui",
-    "directory": "packages/core/scanner"
+    "directory": "packages/utilities/filename-parser"
   },
   "bugs": {
     "url": "https://github.com/moon-software-team/moon-ui/issues"
