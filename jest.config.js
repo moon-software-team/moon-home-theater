@@ -1,8 +1,10 @@
 module.exports = {
+  preset: "ts-jest",
   testEnvironment: "jsdom",
   collectCoverageFrom: ["packages/**/*.{ts,tsx,js,jsx}"],
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   modulePathIgnorePatterns: ["<rootDir>/examples", "<rootDir>/tooling/cra-template*"],
+  testRegex: "((\\.|/)(test|spec)\\.tsx?$)",
   transform: {
     "^.+\\.(t|j)sx?$": [
       "@swc/jest",
