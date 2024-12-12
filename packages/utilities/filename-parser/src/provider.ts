@@ -14,3 +14,11 @@ export const PROVIDERS_EXPS = {
 
 /** Utility type */
 export type ProviderSource = keyof typeof PROVIDERS_EXPS;
+
+/** Utility function to map match groups to actual providers */
+export const groupToProvider = (groups: { [key: string]: string }): { source: ProviderSource, id: string } => {
+  return {
+    source: groups['source'] as ProviderSource,
+    id: groups['id']
+  };
+}
