@@ -46,7 +46,7 @@ export const MULTI_EXP = /(?<!(WEB-))\b(MULTi|DUAL|DL)\b/i;
 
 /** Associate each RegExp with a value */
 export const LANGUAGES_EXPS = {
-  'english': RegExp([ENGLISH_EXP, MULTI_EXP].join('|')),
+  'english': RegExp([ENGLISH_EXP.source, MULTI_EXP.source].join('|'), 'i'),
   'french': FRENCH_EXP,
   'spanish': SPANISH_EXP,
   'german': GERMAN_EXP,
