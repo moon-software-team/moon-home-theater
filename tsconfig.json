@@ -1,5 +1,39 @@
 {
-  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    /* Target Options */
+    "target": "ES2019",
+    "module": "CommonJS",
+
+    /* Basic Options */
+    "declaration": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "noEmit": true,
+    "types": ["node", "jest"],
+    "lib": ["DOM", "ES2019"],
+
+    /* Strict Type-Checking Options */
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "jsx": "react-jsx",
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Experimental Options */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false
+  },
   "include": ["packages"],
   "exclude": ["**/node_modules", "**/dist", "**/.turbo"]
 }
