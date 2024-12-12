@@ -1,0 +1,23 @@
+# Generated files
+node_modules
+dist
+
+# Build
+*.tsbuildinfo
+.turbo
+
+# Jest
+coverage
+.coverage
+
+# Miscs
+.DS_Store
+.env*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
