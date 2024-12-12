@@ -13,7 +13,7 @@ export const filterEmpty = (obj: Object) => Object.fromEntries(Object.entries(ob
 export const removeDoublon = (arr: any[]) => arr.filter((x, index) => index === arr.indexOf(x));
 
 /** Utility type for the match result */
-type MatchResult = { value: string; source: string; };
+type MatchResult = { value: string; source: string; groups?: { [key: string]: string } };
 /** Utility type for an expression list */
 type ExpressionList = { [key: string]: RegExp };
 
@@ -23,7 +23,7 @@ type ExpressionList = { [key: string]: RegExp };
  * @param expressions The list of expressions to tests
  * @returns The matching result or null if no match
  */
-export const matchOneExpressions = (str: string, expressions: ExpressionList): MatchResult | null => {
+export const matchOneExpressions = (str: string, expressions: ExpressionList): MatchResult | undefined => {
   /** Loop through each key on the expression list */
   for (const key in expressions) {
     /** Run the regular expression on the string */
@@ -31,11 +31,11 @@ export const matchOneExpressions = (str: string, expressions: ExpressionList): M
 
     /** On match returns */
     if (match) {
-      return { value: key, source: match[0] };
+      return { value: key, source: match[0], groups: match.groups };
     }
   }
-  /** Otherwise null */
-  return null;
+  /** Otherwise undefined */
+  return undefined;
 };
 
 /**
@@ -44,7 +44,7 @@ export const matchOneExpressions = (str: string, expressions: ExpressionList): M
  * @param expressions The expression list to tests
  * @returns The result of the match or null if no match
  */
-export const matchManyExpressions = (str: string, expressions: ExpressionList): MatchResult[] | null => {
+export const matchManyExpressions = (str: string, expressions: ExpressionList): MatchResult[] | undefined => {
   /** Prepare the list of result */
   const results: MatchResult[] = [];
 
@@ -55,7 +55,7 @@ export const matchManyExpressions = (str: string, expressions: ExpressionList): 
 
     /** Save the match */
     if (match) {
-      results.push({ value: key, source: match[0] });
+      results.push({ value: key, source: match[0], groups: match.groups });
     }
   }
 
@@ -64,6 +64,6 @@ export const matchManyExpressions = (str: string, expressions: ExpressionList): 
     return results;
   }
 
-  /** Otherwise return null */
-  return null;
+  /** Otherwise return undefined */
+  return undefined;
 }
