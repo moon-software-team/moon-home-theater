@@ -1,11 +1,12 @@
 # Folders
-node_modules
-dist
-template
-logs
-.turbo
-.coverage
-coverage
+node_modules/
+dist/
+template/
+logs/
+docs/
+.turbo/
+.coverage/
+coverage/
 
 # Files
 pnpm-lock.yaml
