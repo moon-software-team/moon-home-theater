@@ -19,6 +19,8 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "jsx": "react-jsx",
