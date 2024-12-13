@@ -12,6 +12,7 @@ node_modules/
 # Build files
 dist/
 .turbo/
+.webpack/
 
 # Environnement
 .env*
