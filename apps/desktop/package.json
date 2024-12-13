@@ -22,8 +22,7 @@
     "url": "https://github.com/moon-software-team/moon-home-theater/issues"
   },
   "scripts": {
-    "dev": "pnpm start",
-    "start": "electron-forge start",
+    "dev": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
