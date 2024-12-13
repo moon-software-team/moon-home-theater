@@ -35,7 +35,7 @@
     "build:api": "",
     "build:mobile": "",
     "dev": "",
-    "dev:desktop": "",
+    "dev:desktop": "turbo dev --filter=@moon/desktop",
     "dev:web": "",
     "dev:docs": "",
     "dev:api": "",
