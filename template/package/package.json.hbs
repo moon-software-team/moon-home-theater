@@ -1,0 +1,43 @@
+{
+  "name": "@moon/{{packageName}}",
+  "version": "1.0.0",
+  "description": "{{description}}",
+  "keywords": [
+    "{{packageName}}"
+  ],
+  "author": "Mallory Scotton <mallory.scotton@epitech.eu>",
+  "homepage": "https://github.com/moon-software-team/moon-home-theater",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moon-software-team/moon-home-theater",
+    "directory": "packages/{{outDir}}/{{packageName}}"
+  },
+  "bugs": {
+    "url": "https://github.com/moon-software-team/moon-home-theater/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "pnpm build:fast --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "tsup": {
+    "clean": true,
+    "target": "ES2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  }
+}
