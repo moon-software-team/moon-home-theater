@@ -99,3 +99,7 @@ You can help translating Moon and its subprojects.
     </tr>
   </tbody>
 </table>
+
+---
+
+<h3 align="center">Made with ❤️ by <a href="https://github.com/mallory-scotton">Mallory Scotton</a</h3>
