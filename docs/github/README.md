@@ -51,3 +51,51 @@ You can help translating Moon and its subprojects.
 </p>
 
 ---
+
+<table>
+  <caption>Main dependencies of the project</caption>
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Version</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><a href="https://www.electronjs.org/">Electron</a></th>
+      <td>33</td>
+      <td>Create a desktop application for Moon Home Theater</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="https://react.dev/">React</a></th>
+      <td>19</td>
+      <td>Components base web framework for the UI</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="https://expressjs.com/">Express</a></th>
+      <td>4.21</td>
+      <td>Fast and minimalist web framework for the server</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="https://turbo.build/">TurboRepo</a></th>
+      <td>2.3</td>
+      <td>Building and pipelining tool for JavaScript and TypeScript codebases</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="https://sass-lang.com/">Sass</a></th>
+      <td>1.83</td>
+      <td>CSS extension language </td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="https://ffmpeg.org/">Ffmpeg</a></th>
+      <td>7.1</td>
+      <td>Cross-Platform solution for converting audio/video</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="https://ffmpeg.org/ffprobe.html">FFprobe</a></th>
+      <td>7.1</td>
+      <td>Gathers information from multimedia streams and prints it in human- and machine-readable fashion</td>
+    </tr>
+  </tbody>
+</table>
