@@ -12,6 +12,5 @@
   "insertPragma": false,
   "proseWrap": "preserve",
   "htmlWhitespaceSensitivity": "css",
-  "endOfLine": "crlf",
-  "requirePragma": true
+  "endOfLine": "crlf"
 }
