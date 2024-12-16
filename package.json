@@ -51,7 +51,10 @@
     "test:web": "",
     "test:docs": "",
     "test:api": "turbo test --filter=@moon/api",
-    "test:mobile": ""
+    "test:mobile": "",
+    "create": "plop",
+    "create:pck": "plop package",
+    "create:cmp": "plop component"
   },
   "devDependencies": {
     "@swc/jest": "^0.2.37",
