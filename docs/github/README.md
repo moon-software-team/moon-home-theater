@@ -97,6 +97,11 @@ You can help translating Moon and its subprojects.
       <td>7.1</td>
       <td>Gathers information from multimedia streams and prints it in human- and machine-readable fashion</td>
     </tr>
+    <tr>
+      <th scope="row"><a href="https://webpack.js.org/">Webpack</a></th>
+      <td>5.97</td>
+      <td>Bundle js scripts</td>
+    </tr>
   </tbody>
 </table>
 
