@@ -3,6 +3,7 @@ import express from 'express';
 
 /** Middlewares */
 import compression from 'compression';
+import cors from 'cors';
 
 /** Routers */
 import router from './routes';
@@ -11,6 +12,7 @@ import router from './routes';
 const app = express();
 
 /** Apply middlewares to the application */
+app.use(cors({ origin: '*' }));
 app.use(compression());
 
 /** Use the main routers */
