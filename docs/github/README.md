@@ -123,6 +123,7 @@ You can help translating Moon and its subprojects.
     <strong>Packages</strong> - Sub content used in Moon Home Theater
     <ul>
       <li><strong>Components</strong> - Ui components individually</li>
+      <li><strong>Database</strong> - Database related packages, configuration/models</li>
       <li><strong>Utilities</strong> - Shared utilities for server/interface</li>
       <li><strong>Core</strong> - Core functionnalities</li>
     </ul>
