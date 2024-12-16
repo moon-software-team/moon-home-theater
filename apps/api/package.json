@@ -1,0 +1,60 @@
+{
+  "name": "@moon/api",
+  "version": "1.0.0",
+  "description": "The Moon Home Theater API",
+  "keywords": [
+    "api"
+  ],
+  "author": "Mallory Scotton <mallory.scotton@epitech.eu>",
+  "homepage": "https://github.com/moon-software-team/moon-home-theater",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moon-software-team/moon-home-theater",
+    "directory": "packages/{{outDir}}/{{packageName}}"
+  },
+  "bugs": {
+    "url": "https://github.com/moon-software-team/moon-home-theater/issues"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "nodemon --watch src -e js,ts,json --exec \"ts-node src/index.ts\"",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "tsup": {
+    "clean": true,
+    "target": "ES2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/validator": "^13.12.2",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "compression": "^1.7.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "validator": "^13.12.0"
+  }
+}
