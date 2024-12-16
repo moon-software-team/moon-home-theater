@@ -4,7 +4,7 @@
 ---
 
 <p align="center">
-  <img alt="Logo Banner" src="https://raw.githubusercontent.com/moon-software-team/moon-home-theater/master/docs/assets/banner-logo-solid.svg"/>
+  <img alt="Logo Banner" src="https://raw.githubusercontent.com/moon-software-team/moon-home-theater/master/docs/assets/banner-logo-solid-holiday.svg"/>
   <br/>
   <br/>
   <a href="./LICENSE">
