@@ -10,15 +10,16 @@
  */
 
 /** Constant containing the list of possible generators */
-const GENERATORS = ['component', 'package'];
+const GENERATORS = ['component', 'package', 'model'];
 
 /** Constant containing the list of possible workspaces */
-const WORKSPACES = ['components', 'core', 'utilities'];
+const WORKSPACES = ['components', 'core', 'utilities', 'database', 'database/models'];
 
 /** Constant for default workspaces for each generators */
 const DEFAULT_WORKSPACES = {
   component: 'components',
-  package: 'utilities'
+  package: 'utilities',
+  model: 'database/models'
 };
 
 /**
