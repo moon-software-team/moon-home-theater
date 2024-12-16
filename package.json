@@ -46,7 +46,7 @@
     "lint:docs": "",
     "lint:api": "",
     "lint:mobile": "",
-    "test": "",
+    "test": "jest --verbose --config ./jest.config.js",
     "test:desktop": "",
     "test:web": "",
     "test:docs": "",
@@ -54,6 +54,7 @@
     "test:mobile": ""
   },
   "devDependencies": {
+    "@swc/jest": "^0.2.37",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.2",
     "jest": "^29.7.0",
