@@ -1,6 +1,7 @@
 /** Dependencies */
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { SemanticBaseColors, semanticColors, ThemeColors } from './colors';
+import { Locale } from './i18n';
 
 /** Utility type for the theme */
 type Theme = keyof SemanticBaseColors;
@@ -11,6 +12,8 @@ interface ThemeContextType {
   theme: Theme;
   /** The colors of the theme */
   colors: ThemeColors;
+  /** The locale of the context */
+  locale: Locale;
   /** Utility function to togglet the theme */
   toggleTheme: () => void;
 }
@@ -18,6 +21,7 @@ interface ThemeContextType {
 /** Create the context */
 export const ThemeContext = createContext<ThemeContextType>({
   theme: 'dark',
+  locale: 'en',
   colors: semanticColors.dark,
   toggleTheme: () => undefined
 });
@@ -41,10 +45,15 @@ export const useTheme = (): ThemeContextType => {
 interface ThemeProviderProps {
   children: ReactNode;
   theme?: Theme;
+  locale?: Locale;
 }
 
 /** Create the React theme provider */
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children, theme: initialTheme = 'dark' }) => {
+export const MoonThemeProvider: React.FC<ThemeProviderProps> = ({
+  children,
+  theme: initialTheme = 'dark',
+  locale = 'en'
+}) => {
   /** Use the hook for the theme */
   const [theme, setTheme] = useState<Theme>(initialTheme);
 
@@ -60,6 +69,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children, theme: i
   const value = {
     theme,
     colors,
+    locale,
     toggleTheme
   };
 
