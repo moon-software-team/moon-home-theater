@@ -4,6 +4,7 @@ import express from 'express';
 /** Middlewares */
 import compression from 'compression';
 import cors from 'cors';
+import bodyParser from 'body-parser';
 
 /** Routers */
 import router from './routes';
@@ -14,6 +15,8 @@ const app = express();
 /** Apply middlewares to the application */
 app.use(cors({ origin: '*' }));
 app.use(compression());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 /** Use the main routers */
 app.use('/', router);
