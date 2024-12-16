@@ -20,8 +20,6 @@ describe('filenameParse', () => {
     /** Parse the movie filename */
     const parsed = filenameParse('Your Name. (2012) h264 1080p 7.1 aac FRENCH.ENGLISH.mkv');
 
-    console.log(parsed);
-
     /** Test the movie information */
     expect(parsed.channels).toEqual('7.1');
     expect(parsed.title).toEqual('Your Name');
