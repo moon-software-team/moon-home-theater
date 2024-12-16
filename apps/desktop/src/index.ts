@@ -1,6 +1,10 @@
 /** Dependencies */
 import { app, BrowserWindow, ipcMain } from 'electron';
 import { productName } from '../package.json';
+import { awaitForServer } from '@moon/api';
+
+/** Create the server */
+awaitForServer();
 
 /** If the electron squirrel startup is required,quit */
 if (require('electron-squirrel-startup')) {
@@ -19,7 +23,9 @@ const createWindow = () => {
     height: 540,
     title: productName,
     webPreferences: {
-      preload: MOON_PRELOAD_WEBPACK_ENTRY
+      preload: MOON_PRELOAD_WEBPACK_ENTRY,
+      nodeIntegration: true,
+      contextIsolation: false
     },
     /** By default, the window is hidded to ensure that the content is ready */
     show: false

@@ -63,6 +63,7 @@
     "webpack": "^5.97.1"
   },
   "dependencies": {
+    "@moon/api": "workspace:*",
     "electron-squirrel-startup": "^1.0.1"
   }
 }
