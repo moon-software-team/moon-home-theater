@@ -1,5 +1,5 @@
 /** Dependencies */
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, ipcMain } from 'electron';
 import { productName } from '../package.json';
 
 /** If the electron squirrel startup is required,quit */
@@ -27,6 +27,13 @@ const createWindow = () => {
 
   /** Load the webpack entry in the window */
   window.loadURL(MOON_WEBPACK_ENTRY);
+
+  /** Set the title of the windows */
+  ipcMain.on('set-title', (event, title: string) => {
+    const webContents = event.sender;
+    const win = BrowserWindow.fromWebContents(webContents);
+    win?.setTitle(title);
+  });
 
   /** Add an event for window's ready */
   window.on('ready-to-show', () => window.show());
