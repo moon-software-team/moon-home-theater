@@ -107,4 +107,39 @@ You can help translating Moon and its subprojects.
 
 ---
 
+<h2>Project structure</h2>
+
+<ul>
+  <li>
+    <strong>Applications</strong> - Main content of Moon Home Theater
+    <ul>
+      <li><strong><a href="https://github.com/moon-software-team/moon-home-theater/blob/master/apps/desktop/README.md">Desktop</a></strong> - Desktop application</li>
+      <li><strong><a href="https://github.com/moon-software-team/moon-home-theater/blob/master/apps/api/README.md">Api</a></strong> - Rest api to provide data/transcoder</li>
+      <li><strong><a href="https://github.com/moon-software-team/moon-home-theater/blob/master/apps/web/README.md">Web</a></strong> - Web administrator/remote access</li>
+      <li><strong><a href="https://github.com/moon-software-team/moon-home-theater/blob/master/apps/mobile/README.md">Mobile</a></strong> - Mobile application for remote</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Packages</strong> - Sub content used in Moon Home Theater
+    <ul>
+      <li><strong>Components</strong> - Ui components individually</li>
+      <li><strong>Utilities</strong> - Shared utilities for server/interface</li>
+      <li><strong>Core</strong> - Core functionnalities</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Template</strong> - Boilerplate for package/component
+  </li>
+</ul>
+
+<h2>Requierements</h2>
+
+<ul>
+  <li><a href="https://nodejs.org/">nodejs</a>@22.12.0 - Cross-Platform JavaScript interpretor</li>
+  <li><a href="https://www.npmjs.com/">npm</a>@9.8.0 - Node modules manager</li>
+  <li><a href="https://pnpm.io/">pnpm</a>@9.15.0 - Fast node modules manager and disk space saver</li>
+</ul>
+
+---
+
 <h3 align="center">Made with ❤️ by <a href="https://github.com/mallory-scotton">Mallory Scotton</a</h3>
