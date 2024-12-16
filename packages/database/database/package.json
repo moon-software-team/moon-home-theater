@@ -1,0 +1,51 @@
+{
+  "name": "@moon/database",
+  "version": "1.0.0",
+  "description": "Database manager of Moon Home Theater",
+  "keywords": [
+    "database"
+  ],
+  "author": "Mallory Scotton <mallory.scotton@epitech.eu>",
+  "homepage": "https://github.com/moon-software-team/moon-home-theater",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moon-software-team/moon-home-theater",
+    "directory": "packages/database/database"
+  },
+  "bugs": {
+    "url": "https://github.com/moon-software-team/moon-home-theater/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "pnpm build:fast --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "tsup": {
+    "clean": true,
+    "target": "ES2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  },
+  "dependencies": {
+    "@moon/account-model": "workspace:*",
+    "@moon/constants": "workspace:*",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.5",
+    "sequelize-typescript": "^2.1.6",
+    "sqlite3": "^5.1.7"
+  }
+}
