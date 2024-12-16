@@ -2,6 +2,7 @@
   "name": "@moon/api",
   "version": "1.0.0",
   "description": "The Moon Home Theater API",
+  "private": true,
   "keywords": [
     "api"
   ],
