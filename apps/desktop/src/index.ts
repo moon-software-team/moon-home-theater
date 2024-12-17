@@ -24,8 +24,7 @@ const createWindow = () => {
     title: productName,
     webPreferences: {
       preload: MOON_PRELOAD_WEBPACK_ENTRY,
-      nodeIntegration: true,
-      contextIsolation: false
+      nodeIntegration: true
     },
     /** By default, the window is hidded to ensure that the content is ready */
     show: false
