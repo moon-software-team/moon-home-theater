@@ -64,6 +64,7 @@
   },
   "dependencies": {
     "@moon/api": "workspace:*",
+    "@moon/theme": "workspace:*",
     "electron-squirrel-startup": "^1.0.1"
   }
 }

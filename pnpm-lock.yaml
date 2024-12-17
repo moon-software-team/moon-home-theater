@@ -93,6 +93,9 @@ importers:
       '@moon/api':
         specifier: workspace:*
         version: link:../api
+      '@moon/theme':
+        specifier: workspace:*
+        version: link:../../packages/core/theme
       electron-squirrel-startup:
         specifier: ^1.0.1
         version: 1.0.1
