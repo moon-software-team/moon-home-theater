@@ -2,6 +2,7 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { SemanticBaseColors, semanticColors, ThemeColors } from './colors';
 import { Locale } from './i18n';
+import { createThemeColorAttribute } from './utilities';
 
 /** Utility type for the theme */
 type Theme = keyof SemanticBaseColors;
@@ -72,6 +73,9 @@ export const MoonThemeProvider: React.FC<ThemeProviderProps> = ({
     locale,
     toggleTheme
   };
+
+  /** Add the colors into a DOM style element */
+  createThemeColorAttribute(colors);
 
   /** Return the provider */
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
