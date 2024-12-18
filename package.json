@@ -24,6 +24,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "create": "plop",
+    "create:pck": "plop package"
+  },
   "engines": {
     "node": ">=20.x",
     "pnpm": ">=9.x"
