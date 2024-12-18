@@ -1,0 +1,39 @@
+{
+  "name": "moon-home-theater",
+  "private": true,
+  "description": "",
+  "author": {
+    "name": "Mallory Scotton",
+    "email": "mallory.scotton@epitech.eu",
+    "url": "https://github.com/mallory-scotton"
+  },
+  "license": "MIT",
+  "keywords": [
+    "home-theater",
+    "movie",
+    "serie",
+    "tv-shows",
+    "films",
+    "server",
+    "streaming"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moon-software-team/moon-home-theater"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20.x",
+    "pnpm": ">=9.x"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.5",
+    "turbo": "^2.3.3",
+    "plop": "^4.0.1"
+  }
+}
