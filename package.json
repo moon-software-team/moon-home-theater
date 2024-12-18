@@ -26,7 +26,8 @@
   },
   "scripts": {
     "create": "plop",
-    "create:pck": "plop package"
+    "create:pck": "plop package",
+    "test": "turbo test"
   },
   "engines": {
     "node": ">=20.x",
@@ -37,7 +38,6 @@
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.2",
     "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0",
     "plop": "^4.0.1",
     "prettier": "^3.4.2",
     "rimraf": "^6.0.1",
