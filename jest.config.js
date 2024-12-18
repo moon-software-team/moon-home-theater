@@ -1,23 +1,9 @@
 module.exports = {
   preset: 'ts-jest',
-  testEnvironment: 'jsdom',
-  collectCoverageFrom: ['packages/**/*.{ts,tsx,js,jsx}'],
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  modulePathIgnorePatterns: ['<rootDir>/examples'],
+  testEnvironment: 'node',
   testRegex: '((\\.|/)(test|spec)\\.tsx?$)',
   transform: {
-    '^.+\\.(t|j)sx?$': [
-      '@swc/jest',
-      {
-        jsc: {
-          transform: {
-            react: {
-              runtime: 'automatic'
-            }
-          }
-        }
-      }
-    ]
+    'node_modules/variables/.+\\.(j|t)sx?$': 'ts-jest'
   },
-  transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$']
+  transformIgnorePatterns: ['node_modules/(?!variables/.*)']
 };
