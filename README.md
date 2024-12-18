@@ -89,12 +89,12 @@ You can help translating Moon and its subprojects.
     </tr>
     <tr>
       <th scope="row"><a href="https://ffmpeg.org/">Ffmpeg</a></th>
-      <td>7.1</td>
+      <td>5.1</td>
       <td>Cross-Platform solution for converting audio/video</td>
     </tr>
     <tr>
       <th scope="row"><a href="https://ffmpeg.org/ffprobe.html">FFprobe</a></th>
-      <td>7.1</td>
+      <td>5.1</td>
       <td>Gathers information from multimedia streams and prints it in human- and machine-readable fashion</td>
     </tr>
     <tr>
