@@ -45,6 +45,20 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
 
+  packages/media/transcoder:
+    dependencies:
+      '@moon/metadata':
+        specifier: workspace:*
+        version: link:../metadata
+      '@moon/types':
+        specifier: workspace:*
+        version: link:../../utilities/types
+      child_process:
+        specifier: ^1.0.2
+        version: 1.0.2
+
+  packages/utilities/types: {}
+
 packages:
 
   '@ampproject/remapping@2.3.0':
