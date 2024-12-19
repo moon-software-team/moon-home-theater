@@ -6,11 +6,13 @@ import path from 'path';
 describe('getMediaMetadata', () => {
   /** With an unknown file */
   it("shouldn't find the wanted file", async () => {
-    getMediaMetdata('filenotexisting.mkv')
+    const promise = getMediaMetdata('filenotexisting.mkv')
       .catch((reason) => {
         expect(reason).toBe("file 'filenotexisting.mkv' doesn't exists");
       })
       .then((data) => expect(data).not.toBeDefined);
+
+    await promise;
   });
 
   /** With a known file */
