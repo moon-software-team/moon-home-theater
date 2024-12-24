@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.docs-story,
+.sbdocs-wrapper,
+.docblock-argstable-body td,
+.docblock-argstable-body select,
+.docblock-argstable-body textarea,
+.docblock-argstable-body button,
+.docblock-code-toggle {
+  background-color: rgba(var(--moon-surface))!important;
+}
+
+.docs-story > div:has(button) {
+  background-color: transparent!important;
+}
+
+.docblock-argstable-body td {
+  border-color: rgba(var(--moon-surface-container-highest))!important;
+}
+
+h1, h2, h3 {
+  color: rgba(var(--moon-on-surface))!important;
+}
+
+.docblock-argstable-body select,
+.docblock-argstable-body button,
+.docblock-code-toggle {
+  box-shadow: rgba(var(--moon-surface-container-highest)) 0 0 0 1px inset!important;
+  cursor: pointer;
+}
+
+.docblock-argstable-body textarea {
+  box-shadow: rgba(var(--moon-surface-container-highest)) 0 0 0 1px inset!important;
+}
+
+.sbdocs-content p,
+.docblock-argstable th,
+.docblock-argstable-body select,
+.docblock-argstable-body textarea,
+.docblock-argstable-body button,
+.docblock-code-toggle {
+  color: rgba(var(--moon-on-surface), .8)!important;
+}
+
+.docblock-argstable-body td,
+.docblock-argstable-body td > div {
+  color: rgba(var(--moon-on-surface), .6)!important;
+}
+
+.docblock-argstable-body td > div > div span {
+  border-color: rgba(var(--moon-surface-container-highest))!important;
+  background-color: rgba(var(--moon-surface))!important;
+  color: rgba(var(--moon-on-surface), .6)!important;
+}
+
+.sbdocs-preview {
+  border-color: rgba(var(--moon-surface-container-highest))!important;
+  background-color: transparent!important;
+}
+
+.sb-bar {
+  background-color: rgba(var(--moon-surface-container-highest))!important;
+  box-shadow: none!important;
+  overflow: hidden;
+}
