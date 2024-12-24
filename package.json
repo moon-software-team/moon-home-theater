@@ -27,7 +27,9 @@
   "scripts": {
     "create": "plop",
     "create:pck": "plop package",
-    "test": "turbo test"
+    "test": "turbo test",
+    "dev": "turbo dev",
+    "dev:story": "turbo dev --filter=@moon/storybook"
   },
   "engines": {
     "node": ">=20.x",
@@ -35,6 +37,7 @@
   },
   "packageManager": "pnpm@9.15.0",
   "devDependencies": {
+    "@storybook/react": "^8.4.7",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.2",
     "jest": "^29.7.0",
