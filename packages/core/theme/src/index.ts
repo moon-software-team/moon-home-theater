@@ -1,3 +1,4 @@
 /** Export modules */
 export * from './plugin';
-export * from './colors';
+export * from './components';
+export * from './utilities';
