@@ -1,15 +1,15 @@
-# @moon/button
+# @moon/tag
 
-Buttons help users initiate actions or flow. Choose from different types of buttons to inform emphasis.
+Content blocks help users quickly access information or take action. Choose from various layouts to enhance clarity and engagement.
 
 Please refer to the [documentation](./docs) for more information.
 
 ## Installation
 
 ```sh
-yarn add @moon/button
+yarn add @moon/tag
 # or
-npm i @moon/button
+npm i @moon/tag
 ```
 
 ## Contribution

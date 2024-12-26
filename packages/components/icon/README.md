@@ -1,15 +1,15 @@
-# @moon/content-block
+# @moon/icon
 
-Content blocks help users quickly access information or take action. Choose from various layouts to enhance clarity and engagement.
+Icons guide users through actions and navigation. Select from various icon styles to convey function and focus effectively.
 
 Please refer to the [documentation](./docs) for more information.
 
 ## Installation
 
 ```sh
-yarn add @moon/content-block
+yarn add @moon/icon
 # or
-npm i @moon/content-block
+npm i @moon/icon
 ```
 
 ## Contribution
