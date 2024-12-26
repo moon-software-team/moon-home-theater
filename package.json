@@ -27,6 +27,7 @@
   "scripts": {
     "create": "plop",
     "create:pck": "plop package",
+    "create:cmp": "plop component",
     "test": "turbo test",
     "dev": "turbo dev",
     "dev:story": "turbo dev --filter=@moon/storybook"
