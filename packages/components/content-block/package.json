@@ -41,7 +41,8 @@
     ]
   },
   "dependencies": {
-    "@moon/theme": "workspace:*"
+    "@moon/theme": "workspace:*",
+    "@moon/tag": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "^19.0.2",

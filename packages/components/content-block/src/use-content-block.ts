@@ -9,6 +9,7 @@ import {
   objectToDeps,
   PropGetter
 } from '@moon/theme';
+import { Tag } from '@moon/tag';
 
 /** Define default props */
 interface Props {
@@ -31,7 +32,7 @@ interface Props {
     /**
      * Tags to add in the extra data
      */
-    tags?: ReactElement | ReactElement[];
+    tags?: ReactElement<typeof Tag> | ReactElement<typeof Tag>[] | string | string[];
     /**
      * Similar to `subtitle` for the extra data
      */
