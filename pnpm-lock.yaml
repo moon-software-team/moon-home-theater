@@ -66,6 +66,9 @@ importers:
 
   packages/components/content-block:
     dependencies:
+      '@moon/tag':
+        specifier: workspace:*
+        version: link:../tag
       '@moon/theme':
         specifier: workspace:*
         version: link:../../core/theme
