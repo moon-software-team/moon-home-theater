@@ -4,18 +4,20 @@ import { tv, VariantProps } from 'tailwind-variants';
 /** Create the tailwind variant for the button component */
 export const button = tv({
   slots: {
-    base: 'group px-16dp py-10dp rounded-full flex gap-6dp cursor-pointer transition-all',
-    icon: '',
+    base: 'group px-16dp py-10dp rounded-full flex justify-center items-center gap-6dp cursor-pointer transition-all outline-none',
+    icon: 'fill-inverse-surface',
     label: 'text-inverse-surface typo-label-lg'
   },
   variants: {
     disabled: {
       true: {
-        base: 'cursor-not-allowed hocus:inner-border-1.5dp hocus:inner-border-on-surface-variant/20',
+        base: 'cursor-not-allowed bg-transparent hocus:inner-border-1.5dp hocus:inner-border-on-surface-variant/20',
+        icon: 'fill-inverse-surface/40',
         label: 'text-inverse-surface/40'
       },
       false: {
         base: 'hocus:scale-110 hocus:bg-inverse-surface active:!scale-100',
+        icon: 'group-hocus:fill-inverse-on-surface',
         label: 'group-hocus:text-inverse-on-surface'
       }
     },
