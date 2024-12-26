@@ -1,5 +1,5 @@
 /** Dependencies */
-import { ReactElement, useMemo, useCallback } from 'react';
+import { useMemo, useCallback } from 'react';
 import {
   button,
   ButtonSlots,

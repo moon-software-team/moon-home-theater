@@ -2,6 +2,9 @@
 import { Meta } from '@storybook/react';
 import { button } from '@moon/theme';
 
+/** Import the list of possible icons */
+import icons from '@moon/icon/src/icons';
+
 /** Import the component */
 import { Button, ButtonProps } from '../src';
 
@@ -11,7 +14,13 @@ import { Button, ButtonProps } from '../src';
  */
 export default {
   title: 'Components/Button',
-  component: Button
+  component: Button,
+  argTypes: {
+    icon: {
+      control: { type: 'select' },
+      options: Object.keys(icons)
+    }
+  }
 } as Meta<typeof Button>;
 
 /** Define the default props */
