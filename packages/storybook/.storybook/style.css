@@ -8,6 +8,7 @@
 .docblock-argstable-body select,
 .docblock-argstable-body textarea,
 .docblock-argstable-body button,
+.docblock-argstable-body input[type=number],
 .docblock-code-toggle {
   background-color: rgba(var(--moon-surface))!important;
 }
@@ -31,6 +32,7 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
+.docblock-argstable-body input,
 .docblock-argstable-body textarea {
   box-shadow: rgba(var(--moon-surface-container-highest)) 0 0 0 1px inset!important;
 }
@@ -40,8 +42,19 @@ h1, h2, h3 {
 .docblock-argstable-body select,
 .docblock-argstable-body textarea,
 .docblock-argstable-body button,
+.docblock-argstable-body input,
+.docblock-argstable-body input~span,
 .docblock-code-toggle {
   color: rgba(var(--moon-on-surface), .8)!important;
+}
+
+.docblock-argstable-body label:has(input) {
+  background-color: transparent;
+}
+
+.docblock-argstable-body input:not(:checked)~span:first-of-type,
+.docblock-argstable-body input:checked~span:last-of-type {
+  background-color: rgba(var(--moon-surface-container-highest))!important;
 }
 
 .docblock-argstable-body td,
