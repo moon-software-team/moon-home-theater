@@ -59,6 +59,13 @@ const parameters: Preview['parameters'] = {
       appBorderRadius: 14,
       brandImage: '/light-logo.svg'
     }
+  },
+  backgrounds: {
+    values: [
+      { name: 'Dark', value: '#131314' },
+      { name: 'Light', value: '#FFFFFF' }
+    ],
+    default: 'Dark'
   }
 };
 

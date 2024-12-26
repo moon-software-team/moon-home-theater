@@ -9,12 +9,17 @@
 .docblock-argstable-body textarea,
 .docblock-argstable-body button,
 .docblock-argstable-body input[type=number],
+code,
 .docblock-code-toggle {
   background-color: rgba(var(--moon-surface))!important;
 }
 
 .docs-story > div:has(button) {
   background-color: transparent!important;
+}
+
+code {
+  border-color: rgba(var(--moon-surface-container-highest))!important;
 }
 
 .docblock-argstable-body td {
@@ -43,6 +48,7 @@ h1, h2, h3 {
 .docblock-argstable-body textarea,
 .docblock-argstable-body button,
 .docblock-argstable-body input,
+code,
 .docblock-argstable-body input~span,
 .docblock-code-toggle {
   color: rgba(var(--moon-on-surface), .8)!important;
