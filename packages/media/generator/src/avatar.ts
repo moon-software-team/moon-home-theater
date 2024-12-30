@@ -35,7 +35,7 @@ export interface AvatarGeneratorOptions {
 export const generateAvatar = (
   initials: string,
   options: AvatarGeneratorOptions = {}
-): PNGStream => {
+): Buffer => {
   /** Get the generator options */
   const { size = 32, backgroundColor = 'random', textColor = 'white', textRatio = 0.4 } = options;
 
@@ -62,5 +62,5 @@ export const generateAvatar = (
   context.fillText(initials.substring(0, 2).toUpperCase(), clampedSize / 2, clampedSize / 2);
 
   /** Return the PNG stream of the avatar */
-  return canvas.createPNGStream();
+  return canvas.toBuffer('image/png');
 };
