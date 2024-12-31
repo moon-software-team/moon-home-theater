@@ -1,0 +1,47 @@
+{
+  "name": "@moon/providers",
+  "version": "1.0.0",
+  "description": "A package for integrating with external media data providers (TMDb, IMDb, TVDb, FanartTV) to fetch movie, TV show, and artwork information.",
+  "keywords": [
+    "providers"
+  ],
+  "author": "Mallory Scotton <mallory.scotton@epitech.eu>",
+  "homepage": "https://github.com/moon-software-team/moon-home-theater",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moon-software-team/moon-home-theater",
+    "directory": "packages/media/providers"
+  },
+  "bugs": {
+    "url": "https://github.com/moon-software-team/moon-home-theater/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "pnpm build:fast --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "tsup": {
+    "clean": true,
+    "target": "ES2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7"
+  }
+}
