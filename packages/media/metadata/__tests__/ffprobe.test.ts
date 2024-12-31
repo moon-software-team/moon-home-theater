@@ -1,6 +1,5 @@
 /** Dependencies */
 import { getMediaMetdata } from '../src';
-import path from 'path';
 
 /** Create a new tests for the function */
 describe('getMediaMetadata', () => {
