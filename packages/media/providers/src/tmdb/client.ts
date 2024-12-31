@@ -16,14 +16,14 @@ class TMDBClient {
       baseUrl: config.TMDB_BASE_URL,
       apiKey: config.TMDB_API_KEY,
       apiName: 'TMDB_API',
-      useBearer: true
+      useBearer: config.TMDB_USE_BEARER
     });
     /** Create the media api wrapper */
     this.mediaApi = new ApiWrapper({
       baseUrl: config.TMDB_MEDIA_BASE_URL,
       apiKey: config.TMDB_API_KEY,
       apiName: 'TMDB_MEDIA_API',
-      useBearer: true
+      useBearer: config.TMDB_USE_BEARER
     });
   }
 
