@@ -18,7 +18,7 @@ const IconFrame: React.FC<IconFrameProps> = (props: IconFrameProps) => {
 
   /** Return the component */
   return (
-    <div role='cell' {...getBaseProps()}>
+    <div {...getBaseProps()}>
       {IconElement({ ...getIconProps() })}
     </div>
   );

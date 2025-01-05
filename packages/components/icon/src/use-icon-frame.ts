@@ -45,7 +45,7 @@ export const useIconFrame = (props: UseIconFrameProps) => {
 
   /** Prepare callbacks function for each slots */
   const getBaseProps = useCallback<PropGetter>(() => {
-    return { className: slots.base({ class: classNames?.base }) };
+    return { className: slots.base({ class: classNames?.base }), role: 'none' };
   }, [slots, classNames?.base]);
 
   const getIconProps = useCallback<PropGetter>(() => {
