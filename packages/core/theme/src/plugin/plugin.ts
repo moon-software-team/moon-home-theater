@@ -8,6 +8,7 @@ import { variants } from './variants';
 import { scrollbar } from './scrollbar';
 import { transitions } from './transition';
 import { defaultBoxShadow } from './inner-border';
+import { animation, keyframes } from './animation';
 
 /** Create the Moon Tailwind plugin */
 export const MoonTwPlugin = () => {
@@ -87,6 +88,8 @@ export const MoonTwPlugin = () => {
       darkMode: 'class',
       theme: {
         extend: {
+          keyframes,
+          animation,
           colors: extendColors,
           aspectRatio: extendAspectRatio,
           spacing: pixelDensitySizes,
