@@ -42,7 +42,7 @@ h1, h2, h3 {
   box-shadow: rgba(var(--moon-surface-container-highest)) 0 0 0 1px inset!important;
 }
 
-.sbdocs-content p,
+.sbdocs-content > p,
 .docblock-argstable th,
 .docblock-argstable-body select,
 .docblock-argstable-body textarea,
