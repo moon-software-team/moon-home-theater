@@ -25,10 +25,14 @@ const LongButton: React.FC<LongButtonProps> = (props: LongButtonProps) => {
   /** Return the component */
   return (
     <div {...getBaseProps()}>
-      {icon && <Icon name={icon} size={20} classNames={{ base: getIconProps().className }} />}
+      {icon && (
+        <div className='size-20dp'>
+          <Icon name={icon} size={20} classNames={{ base: getIconProps().className }} />
+        </div>
+      )}
       <div {...getContentProps()}>
         <span {...getTitleProps()}>{title}</span>
-        {subtitle && <span {...getSubtitleProps()}>{subtitle}</span>}
+        {subtitle && <p {...getSubtitleProps()}>{subtitle}</p>}
       </div>
     </div>
   );
