@@ -53,7 +53,33 @@ export const iconButton = tv({
     {
       disabled: true,
       outlined: false,
-      class: {}
+      class: {
+        base: 'bg-surface-variant/40 hocus:bg-surface-variant/20 hocus:inner-border-on-surface-variant/20 active:!inner-border-0 active:!bg-surface-variant/40'
+      }
+    },
+    {
+      disabled: true,
+      outlined: false,
+      size: 'small',
+      class: {
+        base: 'hocus:inner-border-1dp'
+      }
+    },
+    {
+      disabled: true,
+      outlined: false,
+      size: 'medium',
+      class: {
+        base: 'hocus:inner-border-1.5dp'
+      }
+    },
+    {
+      disabled: true,
+      outlined: false,
+      size: 'large',
+      class: {
+        base: 'hocus:inner-border-2dp'
+      }
     },
     {
       disabled: false,
@@ -65,7 +91,9 @@ export const iconButton = tv({
     {
       disabled: true,
       outlined: true,
-      class: {}
+      class: {
+        base: 'inner-border-on-surface-variant/20 active:bg-surface-variant/20'
+      }
     },
     {
       outlined: true,
