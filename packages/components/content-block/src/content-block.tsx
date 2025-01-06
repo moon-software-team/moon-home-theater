@@ -50,7 +50,7 @@ const ContentBlock: React.FC<ContentBlockProps> = (props: ContentBlockProps) => 
 
   /** Return the component */
   return (
-    <div role='contentinfo' {...getBaseProps()}>
+    <div role='none' {...getBaseProps()}>
       <div {...getHeadingProps()}>
         <span {...getTitleProps()}>{title}</span>
         {subtitle && <span {...getSubtitleProps()}>{subtitle}</span>}
