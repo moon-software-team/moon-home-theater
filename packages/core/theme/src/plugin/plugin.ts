@@ -94,7 +94,9 @@ export const MoonTwPlugin = () => {
           aspectRatio: extendAspectRatio,
           spacing: pixelDensitySizes,
           borderRadius: pixelDensitySizes,
-          borderWidth: pixelDensitySizes
+          borderWidth: pixelDensitySizes,
+          maxWidth: pixelDensitySizes,
+          maxHeight: pixelDensitySizes
         }
       }
     }
