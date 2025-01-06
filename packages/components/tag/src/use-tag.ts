@@ -24,7 +24,7 @@ interface Props {
    * ```ts
    * <Tag classNames={{
    *   base:"base-classes",
-   *   text:"text-classes",
+   *   label:"label-classes",
    *   icon:"icon-classes"
    * }} />
    * ```
