@@ -32,7 +32,11 @@ interface Props {
    * @example
    * ```ts
    * <LongButton classNames={ {
-   *   base:"base-classes"
+   *   base:"base-classes",
+   *   content:"content-classes",
+   *   title:"title-classes",
+   *   subtitle:"subtitle-classes",
+   *   icon:"icon-classes",
    * }} />
    * ```
    */

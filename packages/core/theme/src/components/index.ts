@@ -1,6 +1,7 @@
 /** Forward export components */
 export * from './background-image';
 export * from './button';
+export * from './card';
 export * from './content-block';
 export * from './icon-button';
 export * from './icon-frame';

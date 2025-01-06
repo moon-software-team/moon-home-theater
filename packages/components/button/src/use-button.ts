@@ -24,7 +24,7 @@ interface Props {
    * ```ts
    * <Button classNames={{
    *   base:"base-classes",
-   *   text:"text-classes",
+   *   label:"label-classes",
    *   icon:"icon-classes"
    * }} />
    * ```

@@ -1,0 +1,53 @@
+{
+  "name": "@moon/card",
+  "version": "1.0.0",
+  "description": "Cards are the basic building blocks of a TV app. They contain content and actions about a single subject.",
+  "keywords": [
+    "card"
+  ],
+  "author": "Mallory Scotton <mallory.scotton@epitech.eu>",
+  "homepage": "https://github.com/moon-software-team/moon-home-theater",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moon-software-team/moon-home-theater",
+    "directory": "packages/components/card"
+  },
+  "bugs": {
+    "url": "https://github.com/moon-software-team/moon-home-theater/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "pnpm build:fast --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "tsup": {
+    "clean": true,
+    "target": "ES2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  },
+  "dependencies": {
+    "@moon/theme": "workspace:*",
+    "@moon/content-block": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
