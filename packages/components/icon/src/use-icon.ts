@@ -1,7 +1,7 @@
 /** Dependencies */
 import { useMemo, useCallback } from 'react';
 import {
-  icon,
+  cardSlider,
   IconSlots,
   IconVariantProps,
   SlotsToClasses,
@@ -39,13 +39,13 @@ export type UseIconProps = Props & IconVariantProps;
  * @returns Custom hook designed for the component
  */
 export const useIcon = (props: UseIconProps) => {
-  const [omittedProps, variantProps] = mapPropsVariants(props, icon.variantKeys);
+  const [omittedProps, variantProps] = mapPropsVariants(props, cardSlider.variantKeys);
 
   /** Split the props and set defaults */
   const { size, classNames } = omittedProps;
 
   /** Get the memo for the slots */
-  const slots = useMemo(() => icon(variantProps), [objectToDeps(variantProps)]);
+  const slots = useMemo(() => cardSlider(variantProps), [objectToDeps(variantProps)]);
 
   /** Prepare callbacks function for each slots */
   const getBaseProps = useCallback<PropGetter>(() => {
