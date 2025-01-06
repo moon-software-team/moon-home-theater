@@ -32,7 +32,8 @@ interface Props {
    * @example
    * ```ts
    * <Snackbar classNames={ {
-   *   base:"base-classes"
+   *   base:"base-classes",
+   *   label:"label-classes"
    * }} />
    * ```
    */
