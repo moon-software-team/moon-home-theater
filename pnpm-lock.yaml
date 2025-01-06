@@ -83,6 +83,28 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
 
+  packages/components/card:
+    dependencies:
+      '@moon/content-block':
+        specifier: workspace:*
+        version: link:../content-block
+      '@moon/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+    devDependencies:
+      '@types/react':
+        specifier: ^19.0.2
+        version: 19.0.2
+      '@types/react-dom':
+        specifier: ^19.0.2
+        version: 19.0.2(@types/react@19.0.2)
+      react:
+        specifier: ^19.0.0
+        version: 19.0.0
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.0.0(react@19.0.0)
+
   packages/components/content-block:
     dependencies:
       '@moon/tag':
