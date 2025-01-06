@@ -18,6 +18,10 @@ interface Props {
    */
   children?: ReactElement<typeof ContentBlock>;
   /**
+   * Specifies the width of the card
+   */
+  width?: string;
+  /**
    * The source url of the card image
    */
   src: string;
@@ -50,7 +54,7 @@ export const useCard = (props: UseCardProps) => {
   const [omittedProps, variantProps] = mapPropsVariants(props, card.variantKeys);
 
   /** Split the props and set defaults */
-  const { classNames, children, src } = omittedProps;
+  const { classNames, children, src, width } = omittedProps;
 
   /** Get the memo for the slots */
   const slots = useMemo(() => card(variantProps), [objectToDeps(variantProps)]);
@@ -59,7 +63,8 @@ export const useCard = (props: UseCardProps) => {
   const getBaseProps = useCallback<PropGetter>(() => {
     return {
       'className': slots.base({ class: classNames?.base }),
-      'data-focusable': !props.disabled
+      'data-focusable': !props.disabled,
+      'style': { width }
     };
   }, [slots, classNames?.base]);
 
