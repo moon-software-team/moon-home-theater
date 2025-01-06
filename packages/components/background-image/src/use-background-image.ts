@@ -23,7 +23,9 @@ interface Props {
    * @example
    * ```ts
    * <BackgroundImage classNames={ {
-   *   base:"base-classes"
+   *   base:"base-classes",
+   *   image:"image-classes",
+   *   scrim:"scrim-classes"
    * }} />
    * ```
    */
